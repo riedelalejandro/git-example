@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import style from './mainContainer.scss';
 import SliderBox from './SliderBox';
@@ -26,16 +25,15 @@ class MainContainer extends Component {
       <div className={style.mainContainer}>
         <div className={style.simulateCreditTitle}>Simulá tu crédito</div>
         <SliderBox
-          value={this.store.value}
-          fee={this.store.fee}
+          value={this.store.amountValue}
+          fee={this.store.feeValue}
           handleChangeValue={this.changeValue}
-          handleChangeFee={this.changeFee}/>
-        <ButtonsBox fixedFeeValue={this.store.fixedFeeValue}/>
+          handleChangeFee={this.changeFee}
+        />
+        <ButtonsBox fixedFeeValue={this.store.fixedFeeValue} />
       </div>
     );
   }
 }
-
-MainContainer.propTypes = {};
 
 export default MainContainer;
