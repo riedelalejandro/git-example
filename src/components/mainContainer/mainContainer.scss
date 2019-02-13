@@ -1,138 +1,181 @@
-.mainContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(180deg, #003b67, #054777);
-  width: 589px;
-  color: white;
-}
-.simulateCreditTitle{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  height: 135px;
-  font-size: 30px;
-  font-weight: 700;
-}
 
-.mainSliderInformation{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.slider{
-  margin: auto;
-  margin-bottom: 10px;
-  margin-top: 16px;
-  width: 416px;
-}
-
-.sliderBoxContainer{
-  width: 476px;
-  height: 268px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: transparent;
-}
-
-
-.extraSliderInformation{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 40px;
-
-}
-
-
-
-.fixedFeeValueContainer{
-  height: 50%;
-  background-color: #00355d;
-  display: flex;
-}
-
-.ButtonsContainer{
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-.mainLeftInformation{
-  font-size: 18px;
-}
-
-.mainRightInformation{
-  font-size: 19px;
-  font-weight: bold;
-  width: 150px;
-  height: 37px;
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background-color: transparent;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.extraLeftInformation{
-//SON IGUALES
-}
-
-.extraRightInformation{
-
-}
-
-.buttonsBoxContainer{
-  height: 123px;
-  width: 503px;
-}
-
-.fixedFeeValueInformation{
-  height: 100%;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 17px;
-}
-.fixedFeeValue{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  font-size: 40px;
-  font-weight: 700;
-}
-.getCreditButton{
-  width: 341px;
-  background-color: #17aa8d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 23px;
-}
-.detailsButton{
-  width: 151px;
-  height: 100%;
-  background-color: #0b548b;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 14px;
+  .mainContainer {
+    justify-content: center;
+    background: linear-gradient(180deg, #003b67, #054777);
+    color: white;
+    width: 100%;
   }
+  .simulateCreditTitle {
+
+    display: flex;
+    align-items: center;
+justify-content: center;
+    height: 135px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .mainSliderInformation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .slider {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .sliderBoxContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+  .extraSliderInformation {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+
+  }
+
+
+  .fixedFeeValueContainer {
+    height: 50%;
+    background-color: #00355d;
+    display: flex;
+  }
+
+  .ButtonsContainer {
+    height: 50%;
+
+  }
+
+
+  .mainLeftInformation {
+    font-size: 18px;
+  }
+
+  .mainRightInformation {
+    font-size: 19px;
+    font-weight: bold;
+    width: 150px;
+    height: 37px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+  .buttonsBoxContainer {
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+
+  .fixedFeeValueInformation {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-grow: 1;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .fixedFeeValue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .getCreditButton {
+    background-color: #17aa8d;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 23px;
+    padding: 4px;
+  }
+  .detailsButton {
+    height: 100%;
+    background-color: #0b548b;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 3px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mainContainer {
+     width: 589px;
+    }
+    .slider {
+      width: 416px;
+    }
+
+    .sliderBoxContainer {
+      width: 476px;
+    }
+    .buttonsBoxContainer {
+      height: 123px;
+      width: 503px;
+    }
+
+    .fixedFeeValueInformation {
+      width: 255px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .detailsButton {
+      width: 151px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    .getCreditButton {
+      width: 341px;
+      display: flex;
+      align-self: center;
+      padding: 16.8px;
+    }
+
+    .ButtonsContainer {
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .fixedFeeValue {
+      font-size: 40px;
+    }
+
+  //fin diseño web
+}
