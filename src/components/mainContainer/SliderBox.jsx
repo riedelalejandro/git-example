@@ -10,8 +10,8 @@ const handle = props => {
   return <Handle value={value} {...restProps} />;
 };
 
-const MIN_AMOUNT=5000;
-const MAX_AMOUNT=50000;
+const MIN_AMOUNT = 5000;
+const MAX_AMOUNT = 50000;
 const parseValue = (value, checkMin) => {
   let val = value.replace(/[^0-9]/g, '') * 1;
   console.log('parseAmount', val);
@@ -47,7 +47,7 @@ const parseFee = (value, onBlurCheck) => {
   return val;
 };
 
-const SliderBox = ({handleChangeValue, handleChangeFee, value, fee}) => (
+const SliderBox = ({ handleChangeValue, handleChangeFee, value, fee }) => (
   <div className={style.sliderBoxContainer}>
     <div className={style.mainSliderInformation}>
       <div className={style.mainLeftInformation}>MONTO TOTAL</div>
@@ -58,7 +58,8 @@ const SliderBox = ({handleChangeValue, handleChangeFee, value, fee}) => (
         onBlur={event =>
           handleChangeValue(parseValue(event.target.value, true))
         }
-        onChange={event => handleChangeValue(parseValue(event.target.value))}/>
+        onChange={event => handleChangeValue(parseValue(event.target.value))}
+      />
     </div>
     <div className={style.slider}>
       <Slider
@@ -66,7 +67,8 @@ const SliderBox = ({handleChangeValue, handleChangeFee, value, fee}) => (
         max={50000}
         value={value}
         handle={handle}
-        onChange={value => handleChangeValue(value)}/>
+        onChange={value => handleChangeValue(value)}
+      />
     </div>
     <div className={style.extraSliderInformation}>
       <div className={style.extraLeftInformation}>$ 5.000</div>
@@ -80,7 +82,8 @@ const SliderBox = ({handleChangeValue, handleChangeFee, value, fee}) => (
         value={fee}
         className={style.mainRightInformation}
         onBlur={event => handleChangeFee(parseFee(event.target.value, true))}
-        onChange={event => handleChangeFee(parseFee(event.target.value))}/>
+        onChange={event => handleChangeFee(parseFee(event.target.value))}
+      />
     </div>
     <div className={style.slider}>
       <Slider
@@ -88,7 +91,8 @@ const SliderBox = ({handleChangeValue, handleChangeFee, value, fee}) => (
         max={24}
         value={fee}
         handle={handle}
-        onChange={value => handleChangeFee(value)}/>
+        onChange={value => handleChangeFee(value)}
+      />
     </div>
     <div className={style.extraSliderInformation}>
       <div className={style.extraLeftInformation}>3</div>

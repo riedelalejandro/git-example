@@ -7,14 +7,30 @@ class Store {
   @observable
   fee = window.localStorage.getItem('fee') * 1;
 
+  @observable
+  time = 0;
+
+  @observable
+  searchTerm = '';
+
   @computed
   get amountValue() {
     return this.value;
   }
 
   @computed
+  get timeValue() {
+    return this.time;
+  }
+
+  @computed
   get feeValue() {
     return this.fee;
+  }
+
+  @action
+  setSearchTerm(value) {
+    this.searchTerm = value;
   }
 
   @action
@@ -28,6 +44,12 @@ class Store {
     this.fee = fee;
     window.localStorage.setItem('fee', fee);
   }
+
+  @action
+  setTime = () => {
+    this.time = this.time + 1;
+    console.log('time', this.time);
+  };
 
   @computed
   get fixedFeeValue() {
