@@ -1,0 +1,24 @@
+name: Pruebas unitarias
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests with coverage
+        run: npm run test -- --coverage
+
+      - name: Check coverage
+        run: |
+          npm install -g coverage-percentage
+          coverage-percentage -t 80 coverage/lcov.info
